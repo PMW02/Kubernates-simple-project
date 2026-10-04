@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+
+metadata: 
+  name: myservice
+  namespace: project1
+
+spec:
+  ports:
+    - port: 80
+      targetPort: 8080
+  selector:
+    app: webapp
